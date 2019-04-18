@@ -13,8 +13,7 @@ class PortfoliosController < ApplicationController
   end
 
   def create
-    @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body,
-      technologies_attributes: [:name]))
+    @portfolio_item = Portfolio.new(portfolio_params)
 
     respond_to do |format|
       if @portfolio_item.save
@@ -34,7 +33,7 @@ class PortfoliosController < ApplicationController
   def update
     @portfolio_item = Portfolio.find(params[:id])
     respond_to do |format|
-      if @portfolio_item.update(params.require(:portfolio).permit(:title, :subtitle, :body))
+      if @portfolio_item.update(portfolio_params)
         format.html { redirect_to portfolios_path, notice: 'Record was successfully updated.' }
         format.json { render :show, status: :ok, location: @blog }
       else
@@ -43,20 +42,29 @@ class PortfoliosController < ApplicationController
     end
   end
 
-def show
-  @portfolio_item = Portfolio.find(params[:id])
-end
-
-def destroy
-  #performs lookup
-  @portfolio_item = Portfolio.find(params[:id])
-  #destroy/delete record
-  @portfolio_item.destroy
-  #redirect to portfolios page
-  respond_to do |format|
-    format.html { redirect_to portfolios_url, notice: 'Portfolio was successfully deleted.' }
-    format.json { head :no_content }
+  def show
+    @portfolio_item = Portfolio.find(params[:id])
   end
-end
+
+  def destroy
+    #performs lookup
+    @portfolio_item = Portfolio.find(params[:id])
+    #destroy/delete record
+    @portfolio_item.destroy
+    #redirect to portfolios page
+    respond_to do |format|
+      format.html { redirect_to portfolios_url, notice: 'Portfolio was successfully deleted.' }
+      format.json { head :no_content }
+    end
+  end
+
+  private
+  def portfolio_params
+    params.require(:portfolio).permit(:title,
+                                      :subtitle,
+                                      :body,
+                                      technologies_attributes: [:name]
+                                    )
+  end
 
 end
