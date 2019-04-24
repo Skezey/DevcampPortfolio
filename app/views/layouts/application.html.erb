@@ -5,22 +5,20 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-  <meta name="keywords" content="<%= @seo_keywords %>" />
+    <meta name="keywords" content="<%= @seo_keywords %>"/>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
-    <%= render "shared/application_nav", location: "top" %>
+      <%= render "shared/application_nav", location: "top" %>
 
-    <%= login_helper %>
-
-    <%= yield %>
-    <%= source_helper("application") %>
-    <%= copyright_generator %>
+      <%= yield %>
+      <%= source_helper("application") %>
+      <%= render "shared/application_footer" %>
 
     </div>
   </body>
