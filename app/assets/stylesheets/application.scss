@@ -118,11 +118,14 @@ body {
   text-align: left;
 }
 
-.cancel {
-  text-align: center;
-  color: red;
+.card-body a {
+  color: black
 }
 
-.cancel a {
-  color: black;
+.cancel {
+  text-align: center;
+}
+
+.register-text a {
+  align-items: center;
 }
