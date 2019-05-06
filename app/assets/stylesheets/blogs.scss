@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome";
 
 /* stylelint-disable selector-list-comma-newline-after */
 
@@ -111,7 +112,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.25rem;
   color: #999;
 }
-
+.blog-post a{
+  color: black;
+}
 /*
  * Footer
  */
@@ -124,4 +127,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+
+/*
+ *Custom Styles
+ */
+
+ .social-links li{
+   font-size: 1.7em;
+ }
+
+ .social-links a{
+   color: black;
+ }
+.blog-header a{
+  color: black;
+}
+.nav-scroller a{
+  color: black;
 }
