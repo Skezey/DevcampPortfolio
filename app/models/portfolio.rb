@@ -10,12 +10,16 @@ class Portfolio < ApplicationRecord
     where(subtitle: "Angular")
   end
 
+  def self.by_position
+    order("position ASC")
+  end
+
   #Once a portfolio is initized with New, call set_defaults
   after_initialize :set_defaults
 
   #if image is Nil, set default image
   def set_defaults
-    self.main_image ||= Placeholder.image_generator(height: 350, width: 350)
-    self.thumb_image ||= Placeholder.image_generator(height: 150, width: 150)
+    self.main_image ||= Placeholder.image_generator(height: 350, width: 200)
+    self.thumb_image ||= Placeholder.image_generator(height: 350, width: 200)
   end
 end
