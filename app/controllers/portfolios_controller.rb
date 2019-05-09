@@ -1,8 +1,7 @@
 class PortfoliosController < ApplicationController
-  before_action :set_portfolio_item, only: [:edit, :update, :show, :destroy]
+  before_action :set_portfolio_item, only: [:edit, :show, :update, :destroy]
   layout 'portfolio'
-  access all: [:show, :index, :angular], user: {except: [:destroy, :new, :create, :update, :edit, :sort]},
-                                                                                          site_admin: :all
+  access all: [:show, :index, :angular], user: {except: [:destroy, :new, :create, :update, :edit, :sort]}, site_admin: :all
 
   def index
     @portfolio_items = Portfolio.by_position
@@ -12,6 +11,7 @@ class PortfoliosController < ApplicationController
     params[:order].each do |key, value|
       Portfolio.find(value[:id]).update(position: value[:position])
     end
+
     render nothing: true
   end
 
@@ -29,24 +29,20 @@ class PortfoliosController < ApplicationController
 
     respond_to do |format|
       if @portfolio_item.save
-        format.html { redirect_to portfolios_path, notice: 'Portfolio was successfully created.' }
-        format.json { render :show, status: :created, location: @blog }
+        format.html { redirect_to portfolios_path, notice: 'Your portfolio item is now live.' }
       else
         format.html { render :new }
-        format.json { render json: @blog.errors, status: :unprocessable_entity }
       end
     end
   end
 
   def edit
-    3.times { @portfolio_item.technologies.build }
   end
 
   def update
     respond_to do |format|
       if @portfolio_item.update(portfolio_params)
-        format.html { redirect_to portfolios_path, notice: 'Record was successfully updated.' }
-        format.json { render :show, status: :ok, location: @blog }
+        format.html { redirect_to portfolios_path, notice: 'The record successfully updated.' }
       else
         format.html { render :edit }
       end
@@ -57,25 +53,28 @@ class PortfoliosController < ApplicationController
   end
 
   def destroy
-    #destroy/delete record
+    # Destroy/delete the record
     @portfolio_item.destroy
-    #redirect to portfolios page
+
+    # Redirect
     respond_to do |format|
-      format.html { redirect_to portfolios_url, notice: 'Portfolio was successfully deleted.' }
-      format.json { head :no_content }
+      format.html { redirect_to portfolios_url, notice: 'Record was removed.' }
     end
   end
 
   private
+
   def portfolio_params
     params.require(:portfolio).permit(:title,
                                       :subtitle,
                                       :body,
+                                      :main_image,
+                                      :thumb_image,
                                       technologies_attributes: [:name]
-                                    )
+                                     )
   end
+
   def set_portfolio_item
     @portfolio_item = Portfolio.find(params[:id])
   end
-
 end
