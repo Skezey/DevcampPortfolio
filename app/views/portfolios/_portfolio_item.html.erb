@@ -1,7 +1,7 @@
 <div class="col-md-4">
   <div class="card portfolio-box" data-id="<%= portfolio_item.id %>">
+    <%= image_tag portfolio_img(portfolio_item.thumb_image, 'thumb').to_s %>
     <a href='<%= portfolio_show_path(portfolio_item) %>'>
-      <%= image_tag portfolio_item.thumb_image.to_s unless portfolio_item.thumb_image.nil? %>
     </a>
     <p class="card-text">
       <span><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span> <%= portfolio_item.subtitle %>
