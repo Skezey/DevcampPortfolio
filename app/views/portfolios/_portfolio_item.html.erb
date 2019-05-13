@@ -1,6 +1,6 @@
 <div class="col-md-4">
   <div class="card portfolio-box" data-id="<%= portfolio_item.id %>">
-    <%= image_tag portfolio_img(portfolio_item.thumb_image, 'thumb').to_s %>
+    <%= image_tag portfolio_img(portfolio_item.thumb_image, 'thumb').to_s, width: '350px', height: '200px' %>
     <a href='<%= portfolio_show_path(portfolio_item) %>'>
     </a>
     <p class="card-text">

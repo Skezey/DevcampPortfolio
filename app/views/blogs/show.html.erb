@@ -2,7 +2,11 @@
 
   <h2><%= @blog.title %></h2>
 
-  <p><%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %></p>
+  <% if logged_in?(:site_admin) %>
+    <div class="">
+      <%= link_to "Edit Item", edit_blog_path(@blog), class: 'btn btn-warning' %>
+    </div>
+  <% end %>
 
   <p>
     <%= @blog.body %>
