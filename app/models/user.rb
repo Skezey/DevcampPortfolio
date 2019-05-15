@@ -16,6 +16,8 @@ class User < ApplicationRecord
   #Ensures that a name is entered during registration
   validates_presence_of :name
 
+  has_many :comments, dependent: :destroy
+
   #Splits entered name into first and last name
   def first_name
     self.name.split.first
