@@ -227,6 +227,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
+    redcarpet (3.4.0)
     redis (4.1.1)
     responders (2.4.1)
       actionpack (>= 4.2.0, < 6.0)
@@ -327,6 +328,7 @@ DEPENDENCIES
   pry-byebug
   puma (~> 3.11)
   rails (~> 5.2.3)
+  redcarpet (~> 3.4)
   redis (~> 4.1, >= 4.1.1)
   sass-rails (~> 5.0)
   skeezy_view_tool!
