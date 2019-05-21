@@ -22,4 +22,8 @@ class Blog < ApplicationRecord
     order("created_at DESC")
   end
 
+  def markdown
+    Redcarpet::Markdown.new(Redcarpet::Render::HTML)
+  end
+
 end
