@@ -98,3 +98,103 @@
 2019-05-20T12:17:45.843292+00:00 app[web.1]: F, [2019-05-20T12:17:45.843220 #4] FATAL -- : [4464669f-ca80-4536-a236-8bba04e7e6ad] app/controllers/pages_controller.rb:14:in `tech_news'
 2019-05-20T12:25:29.942594+00:00 heroku[run.6343]: State changed from up to complete
 2019-05-20T12:25:29.921651+00:00 heroku[run.6343]: Process exited with status 0
+2019-05-20T12:29:33.432295+00:00 app[web.1]: I, [2019-05-20T12:29:33.432220 #4]  INFO -- : [7675f421-c4bf-4991-8e78-b56b0e8c3609]   Rendered shared/_application_footer.html.erb (0.1ms)
+2019-05-20T12:29:33.432589+00:00 app[web.1]: I, [2019-05-20T12:29:33.432528 #4]  INFO -- : [7675f421-c4bf-4991-8e78-b56b0e8c3609] Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 1.0ms)
+2019-05-20T12:29:33.507597+00:00 app[web.1]: I, [2019-05-20T12:29:33.507479 #4]  INFO -- : [e8081292-3546-4931-92d7-1bef41d9ba9a] Started GET "/" for 69.162.230.101 at 2019-05-20 12:29:33 +0000
+2019-05-20T12:29:33.508360+00:00 app[web.1]: I, [2019-05-20T12:29:33.508262 #4]  INFO -- : [e8081292-3546-4931-92d7-1bef41d9ba9a] Processing by PagesController#home as HTML
+2019-05-20T12:29:33.509691+00:00 app[web.1]: I, [2019-05-20T12:29:33.509619 #4]  INFO -- : [e8081292-3546-4931-92d7-1bef41d9ba9a]   Rendering pages/home.html.erb within layouts/application
+2019-05-20T12:29:33.509972+00:00 app[web.1]: I, [2019-05-20T12:29:33.509907 #4]  INFO -- : [e8081292-3546-4931-92d7-1bef41d9ba9a]   Rendered pages/home.html.erb within layouts/application (0.2ms)
+2019-05-20T12:29:33.510750+00:00 app[web.1]: I, [2019-05-20T12:29:33.510678 #4]  INFO -- : [e8081292-3546-4931-92d7-1bef41d9ba9a]   Rendered shared/_favicon.html.erb (0.1ms)
+2019-05-20T12:29:33.514014+00:00 app[web.1]: D, [2019-05-20T12:29:33.513920 #4] DEBUG -- : [e8081292-3546-4931-92d7-1bef41d9ba9a]   [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+2019-05-20T12:29:33.514761+00:00 app[web.1]: I, [2019-05-20T12:29:33.514673 #4]  INFO -- : [e8081292-3546-4931-92d7-1bef41d9ba9a]   Rendered shared/_application_nav.html.erb (3.7ms)
+2019-05-20T12:29:33.515254+00:00 app[web.1]: I, [2019-05-20T12:29:33.515135 #4]  INFO -- : [e8081292-3546-4931-92d7-1bef41d9ba9a]   Rendered shared/_application_footer.html.erb (0.2ms)
+2019-05-20T12:29:33.515570+00:00 app[web.1]: I, [2019-05-20T12:29:33.515501 #4]  INFO -- : [e8081292-3546-4931-92d7-1bef41d9ba9a] Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.9ms)
+2019-05-20T12:29:33.515025+00:00 heroku[router]: at=info method=GET path="/" host=powerful-spire-61972.herokuapp.com request_id=e8081292-3546-4931-92d7-1bef41d9ba9a fwd="69.162.230.101" dyno=web.1 connect=1ms service=11ms status=200 bytes=3246 protocol=https
+2019-05-20T12:29:33.593132+00:00 heroku[router]: at=info method=GET path="/assets/application-e0919025dfa83820432f4b287598c804469d2e8b2129786063d884f54bdcc4ed.css" host=powerful-spire-61972.herokuapp.com request_id=c1487ec7-7ebf-42a4-be32-8278056dd1e7 fwd="69.162.230.101" dyno=web.1 connect=1ms service=3ms status=304 bytes=48 protocol=https
+2019-05-20T12:29:35.182872+00:00 heroku[router]: at=info method=GET path="/blogs" host=powerful-spire-61972.herokuapp.com request_id=d16e33c3-ac39-485b-865a-4ccfc14c16bb fwd="69.162.230.101" dyno=web.1 connect=1ms service=19ms status=200 bytes=6191 protocol=https
+2019-05-20T12:29:35.168679+00:00 app[web.1]: I, [2019-05-20T12:29:35.168540 #4]  INFO -- : [d16e33c3-ac39-485b-865a-4ccfc14c16bb] Started GET "/blogs" for 69.162.230.101 at 2019-05-20 12:29:35 +0000
+2019-05-20T12:29:35.169750+00:00 app[web.1]: I, [2019-05-20T12:29:35.169664 #4]  INFO -- : [d16e33c3-ac39-485b-865a-4ccfc14c16bb] Processing by BlogsController#index as HTML
+2019-05-20T12:29:35.173519+00:00 app[web.1]: D, [2019-05-20T12:29:35.173434 #4] DEBUG -- : [d16e33c3-ac39-485b-865a-4ccfc14c16bb]   [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+2019-05-20T12:29:35.174626+00:00 app[web.1]: I, [2019-05-20T12:29:35.174547 #4]  INFO -- : [d16e33c3-ac39-485b-865a-4ccfc14c16bb]   Rendering blogs/index.html.erb within layouts/blog
+2019-05-20T12:29:35.176928+00:00 app[web.1]: D, [2019-05-20T12:29:35.176842 #4] DEBUG -- : [d16e33c3-ac39-485b-865a-4ccfc14c16bb]   [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+2019-05-20T12:29:35.180099+00:00 app[web.1]: D, [2019-05-20T12:29:35.180012 #4] DEBUG -- : [d16e33c3-ac39-485b-865a-4ccfc14c16bb]   [1m[36mBlog Load (0.9ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+2019-05-20T12:29:35.180356+00:00 app[web.1]: I, [2019-05-20T12:29:35.180280 #4]  INFO -- : [d16e33c3-ac39-485b-865a-4ccfc14c16bb]   Rendered collection of templates [0 times] (0.0ms)
+2019-05-20T12:29:35.180771+00:00 app[web.1]: I, [2019-05-20T12:29:35.180699 #4]  INFO -- : [d16e33c3-ac39-485b-865a-4ccfc14c16bb]   Rendered blogs/index.html.erb within layouts/blog (6.0ms)
+2019-05-20T12:29:35.181569+00:00 app[web.1]: I, [2019-05-20T12:29:35.181496 #4]  INFO -- : [d16e33c3-ac39-485b-865a-4ccfc14c16bb]   Rendered shared/_favicon.html.erb (0.1ms)
+2019-05-20T12:29:35.182233+00:00 app[web.1]: I, [2019-05-20T12:29:35.182161 #4]  INFO -- : [d16e33c3-ac39-485b-865a-4ccfc14c16bb]   Rendered shared/_blog_nav.html.erb (0.3ms)
+2019-05-20T12:29:35.182592+00:00 app[web.1]: I, [2019-05-20T12:29:35.182522 #4]  INFO -- : [d16e33c3-ac39-485b-865a-4ccfc14c16bb]   Rendered shared/_blog_masthead.html.erb (0.2ms)
+2019-05-20T12:29:35.182939+00:00 app[web.1]: I, [2019-05-20T12:29:35.182846 #4]  INFO -- : [d16e33c3-ac39-485b-865a-4ccfc14c16bb]   Rendered shared/_blog_sidebar.html.erb (0.1ms)
+2019-05-20T12:29:35.183172+00:00 app[web.1]: I, [2019-05-20T12:29:35.183093 #4]  INFO -- : [d16e33c3-ac39-485b-865a-4ccfc14c16bb]   Rendered shared/_blog_footer.html.erb (0.1ms)
+2019-05-20T12:29:35.183510+00:00 app[web.1]: I, [2019-05-20T12:29:35.183436 #4]  INFO -- : [d16e33c3-ac39-485b-865a-4ccfc14c16bb] Completed 200 OK in 14ms (Views: 6.7ms | ActiveRecord: 3.5ms)
+2019-05-20T12:29:35.259560+00:00 app[web.1]: I, [2019-05-20T12:29:35.259452 #4]  INFO -- : [3f759d49-84eb-43fa-acbe-c301a1ba92e8] Started GET "/blogs" for 69.162.230.101 at 2019-05-20 12:29:35 +0000
+2019-05-20T12:29:35.260391+00:00 app[web.1]: I, [2019-05-20T12:29:35.260305 #4]  INFO -- : [3f759d49-84eb-43fa-acbe-c301a1ba92e8] Processing by BlogsController#index as HTML
+2019-05-20T12:29:35.264140+00:00 app[web.1]: D, [2019-05-20T12:29:35.264018 #4] DEBUG -- : [3f759d49-84eb-43fa-acbe-c301a1ba92e8]   [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+2019-05-20T12:29:35.266146+00:00 app[web.1]: I, [2019-05-20T12:29:35.266033 #4]  INFO -- : [3f759d49-84eb-43fa-acbe-c301a1ba92e8]   Rendering blogs/index.html.erb within layouts/blog
+2019-05-20T12:29:35.268131+00:00 app[web.1]: D, [2019-05-20T12:29:35.268054 #4] DEBUG -- : [3f759d49-84eb-43fa-acbe-c301a1ba92e8]   [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+2019-05-20T12:29:35.269678+00:00 app[web.1]: D, [2019-05-20T12:29:35.269603 #4] DEBUG -- : [3f759d49-84eb-43fa-acbe-c301a1ba92e8]   [1m[36mBlog Load (0.9ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+2019-05-20T12:29:35.269974+00:00 app[web.1]: I, [2019-05-20T12:29:35.269893 #4]  INFO -- : [3f759d49-84eb-43fa-acbe-c301a1ba92e8]   Rendered collection of templates [0 times] (0.0ms)
+2019-05-20T12:29:35.270507+00:00 app[web.1]: I, [2019-05-20T12:29:35.270427 #4]  INFO -- : [3f759d49-84eb-43fa-acbe-c301a1ba92e8]   Rendered blogs/index.html.erb within layouts/blog (4.2ms)
+2019-05-20T12:29:35.271532+00:00 app[web.1]: I, [2019-05-20T12:29:35.271452 #4]  INFO -- : [3f759d49-84eb-43fa-acbe-c301a1ba92e8]   Rendered shared/_favicon.html.erb (0.2ms)
+2019-05-20T12:29:35.272238+00:00 app[web.1]: I, [2019-05-20T12:29:35.272134 #4]  INFO -- : [3f759d49-84eb-43fa-acbe-c301a1ba92e8]   Rendered shared/_blog_nav.html.erb (0.4ms)
+2019-05-20T12:29:35.272645+00:00 app[web.1]: I, [2019-05-20T12:29:35.272562 #4]  INFO -- : [3f759d49-84eb-43fa-acbe-c301a1ba92e8]   Rendered shared/_blog_masthead.html.erb (0.2ms)
+2019-05-20T12:29:35.273239+00:00 app[web.1]: I, [2019-05-20T12:29:35.273159 #4]  INFO -- : [3f759d49-84eb-43fa-acbe-c301a1ba92e8]   Rendered shared/_blog_sidebar.html.erb (0.3ms)
+2019-05-20T12:29:35.273674+00:00 app[web.1]: I, [2019-05-20T12:29:35.273549 #4]  INFO -- : [3f759d49-84eb-43fa-acbe-c301a1ba92e8]   Rendered shared/_blog_footer.html.erb (0.1ms)
+2019-05-20T12:29:35.274188+00:00 app[web.1]: I, [2019-05-20T12:29:35.274109 #4]  INFO -- : [3f759d49-84eb-43fa-acbe-c301a1ba92e8] Completed 200 OK in 14ms (Views: 6.5ms | ActiveRecord: 3.0ms)
+2019-05-20T12:29:35.274259+00:00 heroku[router]: at=info method=GET path="/blogs" host=powerful-spire-61972.herokuapp.com request_id=3f759d49-84eb-43fa-acbe-c301a1ba92e8 fwd="69.162.230.101" dyno=web.1 connect=1ms service=18ms status=200 bytes=6191 protocol=https
+2019-05-20T12:29:35.356939+00:00 heroku[router]: at=info method=GET path="/assets/blogs-bdca6494cda5f2e2d16236b12acbb60afea311bd328ff877142f54ce7cf3f8b6.css" host=powerful-spire-61972.herokuapp.com request_id=61e97ab1-4363-4dc2-a194-c29e98a23845 fwd="69.162.230.101" dyno=web.1 connect=1ms service=1ms status=304 bytes=48 protocol=https
+2019-05-21T07:34:52.000000+00:00 app[api]: Build started by user youngscottj@gmail.com
+2019-05-21T07:35:29.523138+00:00 heroku[web.1]: Restarting
+2019-05-21T07:35:29.544020+00:00 heroku[web.1]: State changed from up to starting
+2019-05-21T07:35:30.478595+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2019-05-21T07:35:30.494249+00:00 app[web.1]: - Gracefully stopping, waiting for requests to finish
+2019-05-21T07:35:30.496307+00:00 app[web.1]: === puma shutdown: 2019-05-21 07:35:30 +0000 ===
+2019-05-21T07:35:30.496362+00:00 app[web.1]: - Goodbye!
+2019-05-21T07:35:30.496454+00:00 app[web.1]: Exiting
+2019-05-21T07:35:30.638228+00:00 heroku[web.1]: Process exited with status 143
+2019-05-21T07:35:29.152069+00:00 app[api]: Deploy 968bb871 by user youngscottj@gmail.com
+2019-05-21T07:35:29.152069+00:00 app[api]: Release v22 created by user youngscottj@gmail.com
+2019-05-21T07:35:33.911879+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 52417 -e production`
+2019-05-21T07:35:34.000000+00:00 app[api]: Build succeeded
+2019-05-21T07:35:40.715683+00:00 heroku[web.1]: State changed from starting to up
+2019-05-21T07:36:30.373303+00:00 app[web.1]: => Booting Puma
+2019-05-21T07:36:30.373329+00:00 app[web.1]: => Rails 5.2.3 application starting in production
+2019-05-21T07:36:30.373331+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2019-05-21T07:36:30.373337+00:00 app[web.1]: Puma starting in single mode...
+2019-05-21T07:36:30.373338+00:00 app[web.1]: * Version 3.12.1 (ruby 2.5.0-p0), codename: Llamas in Pajamas
+2019-05-21T07:36:30.373346+00:00 app[web.1]: * Min threads: 5, max threads: 5
+2019-05-21T07:36:30.373348+00:00 app[web.1]: * Environment: production
+2019-05-21T07:36:30.373350+00:00 app[web.1]: * Listening on tcp://0.0.0.0:52417
+2019-05-21T07:36:30.373351+00:00 app[web.1]: Use Ctrl-C to stop
+2019-05-21T07:36:30.373357+00:00 app[web.1]: I, [2019-05-21T07:36:30.373154 #4]  INFO -- : [2510c31b-de79-4ab9-975b-ea59691e82df] Started GET "/" for 216.51.95.36 at 2019-05-21 07:36:30 +0000
+2019-05-21T07:36:30.377076+00:00 app[web.1]: I, [2019-05-21T07:36:30.376970 #4]  INFO -- : [2510c31b-de79-4ab9-975b-ea59691e82df] Processing by PagesController#home as HTML
+2019-05-21T07:36:30.398979+00:00 app[web.1]: I, [2019-05-21T07:36:30.398825 #4]  INFO -- : [2510c31b-de79-4ab9-975b-ea59691e82df]   Rendering pages/home.html.erb within layouts/application
+2019-05-21T07:36:30.400310+00:00 app[web.1]: I, [2019-05-21T07:36:30.400220 #4]  INFO -- : [2510c31b-de79-4ab9-975b-ea59691e82df]   Rendered pages/home.html.erb within layouts/application (1.0ms)
+2019-05-21T07:36:30.405200+00:00 app[web.1]: I, [2019-05-21T07:36:30.405111 #4]  INFO -- : [2510c31b-de79-4ab9-975b-ea59691e82df]   Rendered shared/_favicon.html.erb (0.5ms)
+2019-05-21T07:36:30.611732+00:00 app[web.1]: D, [2019-05-21T07:36:30.611575 #4] DEBUG -- : [2510c31b-de79-4ab9-975b-ea59691e82df]   [1m[36mUser Load (31.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+2019-05-21T07:36:30.645941+00:00 app[web.1]: I, [2019-05-21T07:36:30.645817 #4]  INFO -- : [2510c31b-de79-4ab9-975b-ea59691e82df]   Rendered shared/_application_nav.html.erb (238.8ms)
+2019-05-21T07:36:30.647756+00:00 app[web.1]: I, [2019-05-21T07:36:30.647663 #4]  INFO -- : [2510c31b-de79-4ab9-975b-ea59691e82df]   Rendered shared/_application_footer.html.erb (0.9ms)
+2019-05-21T07:36:30.648342+00:00 app[web.1]: I, [2019-05-21T07:36:30.648241 #4]  INFO -- : [2510c31b-de79-4ab9-975b-ea59691e82df] Completed 200 OK in 269ms (Views: 254.4ms | ActiveRecord: 162.4ms)
+2019-05-21T07:36:30.649320+00:00 heroku[router]: at=info method=GET path="/" host=powerful-spire-61972.herokuapp.com request_id=2510c31b-de79-4ab9-975b-ea59691e82df fwd="216.51.95.36" dyno=web.1 connect=0ms service=284ms status=200 bytes=3252 protocol=https
+2019-05-21T07:36:30.919487+00:00 heroku[router]: at=info method=GET path="/assets/home_bg-6446dd35d2e59ede25af5638e600fc17e7266aadfa3311b778252862e10887ce.png" host=powerful-spire-61972.herokuapp.com request_id=27ce5f3f-67bc-4ce4-b154-ab8a92f1df5e fwd="216.51.95.36" dyno=web.1 connect=1ms service=44ms status=200 bytes=1287760 protocol=https
+2019-05-21T07:36:30.760695+00:00 heroku[router]: at=info method=GET path="/assets/application-e0919025dfa83820432f4b287598c804469d2e8b2129786063d884f54bdcc4ed.css" host=powerful-spire-61972.herokuapp.com request_id=05b3b381-42a3-482e-a10c-6928ff3a2d61 fwd="216.51.95.36" dyno=web.1 connect=0ms service=2ms status=200 bytes=23897 protocol=https
+2019-05-21T07:36:30.881906+00:00 heroku[router]: at=info method=GET path="/assets/application-daf0b343c8e1cbefa31f66f980e5fd69937783ad99faeadd3d19ed24478b8840.js" host=powerful-spire-61972.herokuapp.com request_id=5d9d68a2-0cb8-475f-8393-fc41140c1a6f fwd="216.51.95.36" dyno=web.1 connect=0ms service=8ms status=200 bytes=145147 protocol=https
+2019-05-21T07:36:31.611920+00:00 heroku[router]: at=info method=GET path="/assets/HardDrivePhotojpeg-d231a9d1dcc671d0af1c3fcb61935ab78ea041025b51e45674c8c622a5d6d01e.mp4" host=powerful-spire-61972.herokuapp.com request_id=f4e55d30-c56b-454c-b681-c79fd8923878 fwd="216.51.95.36" dyno=web.1 connect=6ms service=127ms status=206 bytes=4025808 protocol=https
+2019-05-21T07:36:33.662551+00:00 heroku[router]: at=info method=GET path="/tech_news" host=powerful-spire-61972.herokuapp.com request_id=4ef53fd2-a1df-4bee-a155-3a49f12b7f68 fwd="216.51.95.36" dyno=web.1 connect=0ms service=17ms status=500 bytes=1827 protocol=https
+2019-05-21T07:36:33.648138+00:00 app[web.1]: I, [2019-05-21T07:36:33.648007 #4]  INFO -- : [4ef53fd2-a1df-4bee-a155-3a49f12b7f68] Started GET "/tech_news" for 216.51.95.36 at 2019-05-21 07:36:33 +0000
+2019-05-21T07:36:33.649042+00:00 app[web.1]: I, [2019-05-21T07:36:33.648971 #4]  INFO -- : [4ef53fd2-a1df-4bee-a155-3a49f12b7f68] Processing by PagesController#tech_news as HTML
+2019-05-21T07:36:33.660371+00:00 app[web.1]: I, [2019-05-21T07:36:33.660208 #4]  INFO -- : [4ef53fd2-a1df-4bee-a155-3a49f12b7f68] Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+2019-05-21T07:36:33.661350+00:00 app[web.1]: F, [2019-05-21T07:36:33.660832 #4] FATAL -- : [4ef53fd2-a1df-4bee-a155-3a49f12b7f68]
+2019-05-21T07:36:33.661465+00:00 app[web.1]: F, [2019-05-21T07:36:33.661379 #4] FATAL -- : [4ef53fd2-a1df-4bee-a155-3a49f12b7f68] NameError (uninitialized constant PagesController::SocialTool):
+2019-05-21T07:36:33.661526+00:00 app[web.1]: F, [2019-05-21T07:36:33.661446 #4] FATAL -- : [4ef53fd2-a1df-4bee-a155-3a49f12b7f68]
+2019-05-21T07:36:33.661640+00:00 app[web.1]: F, [2019-05-21T07:36:33.661538 #4] FATAL -- : [4ef53fd2-a1df-4bee-a155-3a49f12b7f68] app/controllers/pages_controller.rb:14:in `tech_news'
+2019-05-21T07:36:36.317209+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=powerful-spire-61972.herokuapp.com request_id=70f3cae7-aa46-4ad8-afc1-8b2582a5b205 fwd="216.51.95.36" dyno=web.1 connect=1ms service=1ms status=200 bytes=143 protocol=https
+2019-05-21T07:36:36.330930+00:00 heroku[router]: at=info method=GET path="/" host=powerful-spire-61972.herokuapp.com request_id=caadc403-d98e-4861-8bd1-9323a6553edd fwd="216.51.95.36" dyno=web.1 connect=5ms service=12ms status=200 bytes=3234 protocol=https
+2019-05-21T07:36:36.321049+00:00 app[web.1]: I, [2019-05-21T07:36:36.320948 #4]  INFO -- : [caadc403-d98e-4861-8bd1-9323a6553edd] Started GET "/" for 216.51.95.36 at 2019-05-21 07:36:36 +0000
+2019-05-21T07:36:36.322463+00:00 app[web.1]: I, [2019-05-21T07:36:36.322388 #4]  INFO -- : [caadc403-d98e-4861-8bd1-9323a6553edd] Processing by PagesController#home as HTML
+2019-05-21T07:36:36.324135+00:00 app[web.1]: I, [2019-05-21T07:36:36.324061 #4]  INFO -- : [caadc403-d98e-4861-8bd1-9323a6553edd]   Rendering pages/home.html.erb within layouts/application
+2019-05-21T07:36:36.324423+00:00 app[web.1]: I, [2019-05-21T07:36:36.324357 #4]  INFO -- : [caadc403-d98e-4861-8bd1-9323a6553edd]   Rendered pages/home.html.erb within layouts/application (0.2ms)
+2019-05-21T07:36:36.325605+00:00 app[web.1]: I, [2019-05-21T07:36:36.325540 #4]  INFO -- : [caadc403-d98e-4861-8bd1-9323a6553edd]   Rendered shared/_favicon.html.erb (0.1ms)
+2019-05-21T07:36:36.328635+00:00 app[web.1]: D, [2019-05-21T07:36:36.328546 #4] DEBUG -- : [caadc403-d98e-4861-8bd1-9323a6553edd]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+2019-05-21T07:36:36.329220+00:00 app[web.1]: I, [2019-05-21T07:36:36.329151 #4]  INFO -- : [caadc403-d98e-4861-8bd1-9323a6553edd]   Rendered shared/_application_nav.html.erb (3.3ms)
+2019-05-21T07:36:36.329477+00:00 app[web.1]: I, [2019-05-21T07:36:36.329392 #4]  INFO -- : [caadc403-d98e-4861-8bd1-9323a6553edd]   Rendered shared/_application_footer.html.erb (0.1ms)
+2019-05-21T07:36:36.329745+00:00 app[web.1]: I, [2019-05-21T07:36:36.329666 #4]  INFO -- : [caadc403-d98e-4861-8bd1-9323a6553edd] Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.8ms)
