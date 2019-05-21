@@ -1,10 +1,11 @@
 <div class="col-sm-8 blog-main">
 
   <% if logged_in?(:site_admin) %>
-    <div class="">
+    <div class="blog-admin-dashboard">
       <span><%= link_to "New Blog Post", new_blog_path(@blog), class: 'btn btn-primary' %></span>
       <span><%= link_to "Topics", topics_path, class: 'btn btn-primary' %></span>
     </div>
+    <hr>
   <% end %>
 
 

@@ -143,6 +143,11 @@ h1, h2, h3, h4, h5, h6 {
  .social-links a{
    color: black;
  }
+
+ .social-links a:hover{
+   color: orange;
+ }
+
 .blog-header a{
   color: black;
 }
@@ -157,4 +162,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 .comment-time {
   font-style: italic;
+}
+.blog-admin-dashboard {
+  margin-top: 15px;
+
+}
+.topic-sidebar-module a{
+  color: black;
+}
+.topic-sidebar-module a:hover{
+  color: orange;
 }
