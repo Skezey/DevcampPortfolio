@@ -2,7 +2,8 @@
 
   <% if logged_in?(:site_admin) %>
     <div class="">
-      <%= link_to "New Blog Post", new_blog_path(@blog), class: 'btn btn-primary' %>
+      <span><%= link_to "New Blog Post", new_blog_path(@blog), class: 'btn btn-primary' %></span>
+      <span><%= link_to "Topics", topics_path, class: 'btn btn-primary' %></span>
     </div>
   <% end %>
 
