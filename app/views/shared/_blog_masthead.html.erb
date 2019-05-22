@@ -5,7 +5,7 @@
         <%= link_to "Back to home", root_path, class: "text-muted"%>
       </div>
       <div class="col-4 text-center">
-        <a class="blog-header-logo text-dark" href="#">Blog</a>
+        <%= link_to "Blog", blogs_path, class: "blog-header-logo text-dark" %>
       </div>
       <div class="col-4 d-flex justify-content-end align-items-center">
         <%= login_helper 'nav-link' %>
