@@ -5,7 +5,6 @@ module SocialTool
       config.consumer_secret     = ENV.fetch("TWITTER_CONSUMER_SECRET")
       config.access_token        = ENV.fetch("TWITTER_ACCESS_TOKEN")
       config.access_token_secret = ENV.fetch("TWITTER_ACCESS_SECRET")
-      #Rails.application.credentials.development[:TWITTER_CONSUMER_KEY]
     end
 
     client.search("#coding", result_type: 'recent').take(6).collect do |tweet|
