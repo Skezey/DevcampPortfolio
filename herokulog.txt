@@ -98,3 +98,103 @@
 2019-05-22T11:03:17.948099+00:00 app[web.1]: F, [2019-05-22T11:03:17.948011 #4] FATAL -- : [dd9c0b37-ba90-4130-99fd-f6d0a5b8af88] NameError (uninitialized constant PagesController::SocialTool):
 2019-05-22T11:03:17.948174+00:00 app[web.1]: F, [2019-05-22T11:03:17.948093 #4] FATAL -- : [dd9c0b37-ba90-4130-99fd-f6d0a5b8af88]
 2019-05-22T11:03:17.948263+00:00 app[web.1]: F, [2019-05-22T11:03:17.948183 #4] FATAL -- : [dd9c0b37-ba90-4130-99fd-f6d0a5b8af88] app/controllers/pages_controller.rb:15:in `tech_news'
+2019-05-23T06:14:06.000000+00:00 app[api]: Build succeeded
+2019-05-23T06:14:18.168296+00:00 heroku[web.1]: State changed from starting to up
+2019-05-23T06:14:52.083426+00:00 app[web.1]: => Booting Puma
+2019-05-23T06:14:52.083446+00:00 app[web.1]: => Rails 5.2.3 application starting in production
+2019-05-23T06:14:52.083448+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2019-05-23T06:14:52.083450+00:00 app[web.1]: Puma starting in single mode...
+2019-05-23T06:14:52.083452+00:00 app[web.1]: * Version 3.12.1 (ruby 2.5.0-p0), codename: Llamas in Pajamas
+2019-05-23T06:14:52.083454+00:00 app[web.1]: * Min threads: 5, max threads: 5
+2019-05-23T06:14:52.083455+00:00 app[web.1]: * Environment: production
+2019-05-23T06:14:52.083457+00:00 app[web.1]: * Listening on tcp://0.0.0.0:42321
+2019-05-23T06:14:52.083458+00:00 app[web.1]: Use Ctrl-C to stop
+2019-05-23T06:14:52.083472+00:00 app[web.1]: I, [2019-05-23T06:14:52.083259 #4]  INFO -- : [59277de2-522a-48e5-8a6a-2bb1428d5089] Started GET "/" for 216.51.95.36 at 2019-05-23 06:14:52 +0000
+2019-05-23T06:14:52.086225+00:00 app[web.1]: I, [2019-05-23T06:14:52.086124 #4]  INFO -- : [59277de2-522a-48e5-8a6a-2bb1428d5089] Processing by PagesController#home as HTML
+2019-05-23T06:14:52.122053+00:00 app[web.1]: I, [2019-05-23T06:14:52.121904 #4]  INFO -- : [59277de2-522a-48e5-8a6a-2bb1428d5089]   Rendering pages/home.html.erb within layouts/application
+2019-05-23T06:14:52.126516+00:00 app[web.1]: I, [2019-05-23T06:14:52.126421 #4]  INFO -- : [59277de2-522a-48e5-8a6a-2bb1428d5089]   Rendered pages/home.html.erb within layouts/application (1.1ms)
+2019-05-23T06:14:52.131919+00:00 app[web.1]: I, [2019-05-23T06:14:52.131817 #4]  INFO -- : [59277de2-522a-48e5-8a6a-2bb1428d5089]   Rendered shared/_favicon.html.erb (0.6ms)
+2019-05-23T06:14:52.397853+00:00 heroku[router]: at=info method=GET path="/" host=scottyoungportfolio.herokuapp.com request_id=59277de2-522a-48e5-8a6a-2bb1428d5089 fwd="216.51.95.36" dyno=web.1 connect=0ms service=327ms status=200 bytes=3183 protocol=https
+2019-05-23T06:14:52.391744+00:00 app[web.1]: I, [2019-05-23T06:14:52.388944 #4]  INFO -- : [59277de2-522a-48e5-8a6a-2bb1428d5089]   Rendered shared/_application_nav.html.erb (255.9ms)
+2019-05-23T06:14:52.391808+00:00 app[web.1]: I, [2019-05-23T06:14:52.390625 #4]  INFO -- : [59277de2-522a-48e5-8a6a-2bb1428d5089]   Rendered shared/_application_footer.html.erb (0.7ms)
+2019-05-23T06:14:52.391812+00:00 app[web.1]: I, [2019-05-23T06:14:52.391101 #4]  INFO -- : [59277de2-522a-48e5-8a6a-2bb1428d5089] Completed 200 OK in 301ms (Views: 273.9ms | ActiveRecord: 51.3ms)
+2019-05-23T06:14:54.829144+00:00 app[web.1]: I, [2019-05-23T06:14:54.829015 #4]  INFO -- : [317c88bb-78b2-45eb-8156-5574d5fc9c52] Started GET "/tech_news" for 216.51.95.36 at 2019-05-23 06:14:54 +0000
+2019-05-23T06:14:54.830439+00:00 app[web.1]: I, [2019-05-23T06:14:54.830347 #4]  INFO -- : [317c88bb-78b2-45eb-8156-5574d5fc9c52] Processing by PagesController#tech_news as HTML
+2019-05-23T06:14:54.845298+00:00 app[web.1]: I, [2019-05-23T06:14:54.845140 #4]  INFO -- : [317c88bb-78b2-45eb-8156-5574d5fc9c52] Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+2019-05-23T06:14:54.846199+00:00 app[web.1]: F, [2019-05-23T06:14:54.846105 #4] FATAL -- : [317c88bb-78b2-45eb-8156-5574d5fc9c52]
+2019-05-23T06:14:54.846322+00:00 app[web.1]: F, [2019-05-23T06:14:54.846241 #4] FATAL -- : [317c88bb-78b2-45eb-8156-5574d5fc9c52] NameError (uninitialized constant PagesController::SocialTool):
+2019-05-23T06:14:54.846398+00:00 app[web.1]: F, [2019-05-23T06:14:54.846326 #4] FATAL -- : [317c88bb-78b2-45eb-8156-5574d5fc9c52]
+2019-05-23T06:14:54.846512+00:00 app[web.1]: F, [2019-05-23T06:14:54.846418 #4] FATAL -- : [317c88bb-78b2-45eb-8156-5574d5fc9c52] app/controllers/pages_controller.rb:15:in `tech_news'
+2019-05-23T06:14:54.849164+00:00 heroku[router]: at=info method=GET path="/tech_news" host=scottyoungportfolio.herokuapp.com request_id=317c88bb-78b2-45eb-8156-5574d5fc9c52 fwd="216.51.95.36" dyno=web.1 connect=15ms service=33ms status=500 bytes=1827 protocol=https
+2019-05-23T06:23:01.000000+00:00 app[api]: Build started by user youngscottj@gmail.com
+2019-05-23T06:23:29.508551+00:00 heroku[web.1]: Restarting
+2019-05-23T06:23:29.513986+00:00 heroku[web.1]: State changed from up to starting
+2019-05-23T06:23:29.261798+00:00 app[api]: Release v32 created by user youngscottj@gmail.com
+2019-05-23T06:23:29.261798+00:00 app[api]: Deploy 1021a827 by user youngscottj@gmail.com
+2019-05-23T06:23:30.607685+00:00 app[web.1]: - Gracefully stopping, waiting for requests to finish
+2019-05-23T06:23:30.611577+00:00 app[web.1]: === puma shutdown: 2019-05-23 06:23:30 +0000 ===
+2019-05-23T06:23:30.611611+00:00 app[web.1]: - Goodbye!
+2019-05-23T06:23:30.611752+00:00 app[web.1]: Exiting
+2019-05-23T06:23:30.590490+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2019-05-23T06:23:30.734714+00:00 heroku[web.1]: Process exited with status 143
+2019-05-23T06:23:34.107638+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 56738 -e production`
+2019-05-23T06:23:34.000000+00:00 app[api]: Build succeeded
+2019-05-23T06:23:44.710243+00:00 heroku[web.1]: State changed from starting to up
+2019-05-23T06:24:57.641957+00:00 app[api]: Starting process with command `reset` by user youngscottj@gmail.com
+2019-05-23T06:25:02.521487+00:00 heroku[run.2003]: Awaiting client
+2019-05-23T06:25:02.548232+00:00 heroku[run.2003]: Starting process with command `reset`
+2019-05-23T06:25:02.733433+00:00 heroku[run.2003]: State changed from starting to up
+2019-05-23T06:25:07.999103+00:00 heroku[run.2003]: State changed from up to complete
+2019-05-23T06:25:07.984165+00:00 heroku[run.2003]: Process exited with status 0
+2019-05-23T06:25:53.665214+00:00 app[api]: Starting process with command `restart` by user youngscottj@gmail.com
+2019-05-23T06:25:58.538316+00:00 heroku[run.4872]: Awaiting client
+2019-05-23T06:25:58.572348+00:00 heroku[run.4872]: Starting process with command `restart`
+2019-05-23T06:25:58.841607+00:00 heroku[run.4872]: State changed from starting to up
+2019-05-23T06:26:02.811106+00:00 heroku[run.4872]: State changed from up to complete
+2019-05-23T06:26:02.795690+00:00 heroku[run.4872]: Process exited with status 127
+2019-05-23T06:26:25.390097+00:00 heroku[web.1]: Restarting
+2019-05-23T06:26:25.410949+00:00 heroku[web.1]: State changed from up to starting
+2019-05-23T06:26:26.248933+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2019-05-23T06:26:26.329099+00:00 app[web.1]: => Booting Puma
+2019-05-23T06:26:26.329129+00:00 app[web.1]: => Rails 5.2.3 application starting in production
+2019-05-23T06:26:26.329131+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2019-05-23T06:26:26.329139+00:00 app[web.1]: Puma starting in single mode...
+2019-05-23T06:26:26.329141+00:00 app[web.1]: * Version 3.12.1 (ruby 2.5.0-p0), codename: Llamas in Pajamas
+2019-05-23T06:26:26.329147+00:00 app[web.1]: * Min threads: 5, max threads: 5
+2019-05-23T06:26:26.329149+00:00 app[web.1]: * Environment: production
+2019-05-23T06:26:26.329151+00:00 app[web.1]: * Listening on tcp://0.0.0.0:56738
+2019-05-23T06:26:26.329152+00:00 app[web.1]: Use Ctrl-C to stop
+2019-05-23T06:26:26.329154+00:00 app[web.1]: - Gracefully stopping, waiting for requests to finish
+2019-05-23T06:26:26.329155+00:00 app[web.1]: === puma shutdown: 2019-05-23 06:26:26 +0000 ===
+2019-05-23T06:26:26.329157+00:00 app[web.1]: - Goodbye!
+2019-05-23T06:26:26.329159+00:00 app[web.1]: Exiting
+2019-05-23T06:26:26.507945+00:00 heroku[web.1]: Process exited with status 143
+2019-05-23T06:26:30.142573+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 57880 -e production`
+2019-05-23T06:26:38.026716+00:00 heroku[web.1]: State changed from starting to up
+2019-05-23T06:26:39.185992+00:00 heroku[router]: at=info method=GET path="/" host=scottyoungportfolio.herokuapp.com request_id=72242280-32e0-4959-9e5c-1fe34a305759 fwd="216.51.95.36" dyno=web.1 connect=2ms service=189ms status=200 bytes=3179 protocol=https
+2019-05-23T06:26:38.997351+00:00 app[web.1]: => Booting Puma
+2019-05-23T06:26:38.997386+00:00 app[web.1]: => Rails 5.2.3 application starting in production
+2019-05-23T06:26:38.997388+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2019-05-23T06:26:38.997393+00:00 app[web.1]: Puma starting in single mode...
+2019-05-23T06:26:38.997395+00:00 app[web.1]: * Version 3.12.1 (ruby 2.5.0-p0), codename: Llamas in Pajamas
+2019-05-23T06:26:38.997401+00:00 app[web.1]: * Min threads: 5, max threads: 5
+2019-05-23T06:26:38.997403+00:00 app[web.1]: * Environment: production
+2019-05-23T06:26:38.997404+00:00 app[web.1]: * Listening on tcp://0.0.0.0:57880
+2019-05-23T06:26:38.997406+00:00 app[web.1]: Use Ctrl-C to stop
+2019-05-23T06:26:38.997411+00:00 app[web.1]: I, [2019-05-23T06:26:38.997206 #4]  INFO -- : [72242280-32e0-4959-9e5c-1fe34a305759] Started GET "/" for 216.51.95.36 at 2019-05-23 06:26:38 +0000
+2019-05-23T06:26:38.998708+00:00 app[web.1]: I, [2019-05-23T06:26:38.998600 #4]  INFO -- : [72242280-32e0-4959-9e5c-1fe34a305759] Processing by PagesController#home as HTML
+2019-05-23T06:26:39.008795+00:00 app[web.1]: I, [2019-05-23T06:26:39.008688 #4]  INFO -- : [72242280-32e0-4959-9e5c-1fe34a305759]   Rendering pages/home.html.erb within layouts/application
+2019-05-23T06:26:39.009536+00:00 app[web.1]: I, [2019-05-23T06:26:39.009462 #4]  INFO -- : [72242280-32e0-4959-9e5c-1fe34a305759]   Rendered pages/home.html.erb within layouts/application (0.6ms)
+2019-05-23T06:26:39.012006+00:00 app[web.1]: I, [2019-05-23T06:26:39.011932 #4]  INFO -- : [72242280-32e0-4959-9e5c-1fe34a305759]   Rendered shared/_favicon.html.erb (0.4ms)
+2019-05-23T06:26:39.177705+00:00 app[web.1]: I, [2019-05-23T06:26:39.177553 #4]  INFO -- : [72242280-32e0-4959-9e5c-1fe34a305759]   Rendered shared/_application_nav.html.erb (164.8ms)
+2019-05-23T06:26:39.180272+00:00 app[web.1]: I, [2019-05-23T06:26:39.180170 #4]  INFO -- : [72242280-32e0-4959-9e5c-1fe34a305759]   Rendered shared/_application_footer.html.erb (0.6ms)
+2019-05-23T06:26:39.180867+00:00 app[web.1]: I, [2019-05-23T06:26:39.180778 #4]  INFO -- : [72242280-32e0-4959-9e5c-1fe34a305759] Completed 200 OK in 182ms (Views: 173.8ms | ActiveRecord: 50.0ms)
+2019-05-23T06:26:50.504440+00:00 heroku[router]: at=info method=GET path="/assets/HardDrivePhotojpeg-d231a9d1dcc671d0af1c3fcb61935ab78ea041025b51e45674c8c622a5d6d01e.mp4" host=scottyoungportfolio.herokuapp.com request_id=acc89348-3480-458b-b547-03b4085d81f9 fwd="216.51.95.36" dyno=web.1 connect=4ms service=7ms status=206 bytes=17175 protocol=https
+2019-05-23T06:26:51.799773+00:00 heroku[router]: at=info method=GET path="/tech_news" host=scottyoungportfolio.herokuapp.com request_id=dd69205e-a64d-44a4-9e71-ceed925378ed fwd="216.51.95.36" dyno=web.1 connect=1ms service=16ms status=500 bytes=1827 protocol=https
+2019-05-23T06:26:51.782705+00:00 app[web.1]: I, [2019-05-23T06:26:51.782430 #4]  INFO -- : [dd69205e-a64d-44a4-9e71-ceed925378ed] Started GET "/tech_news" for 216.51.95.36 at 2019-05-23 06:26:51 +0000
+2019-05-23T06:26:51.784356+00:00 app[web.1]: I, [2019-05-23T06:26:51.784205 #4]  INFO -- : [dd69205e-a64d-44a4-9e71-ceed925378ed] Processing by PagesController#tech_news as HTML
+2019-05-23T06:26:51.794861+00:00 app[web.1]: I, [2019-05-23T06:26:51.794773 #4]  INFO -- : [dd69205e-a64d-44a4-9e71-ceed925378ed] Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+2019-05-23T06:26:51.795630+00:00 app[web.1]: F, [2019-05-23T06:26:51.795551 #4] FATAL -- : [dd69205e-a64d-44a4-9e71-ceed925378ed]
+2019-05-23T06:26:51.795701+00:00 app[web.1]: F, [2019-05-23T06:26:51.795641 #4] FATAL -- : [dd69205e-a64d-44a4-9e71-ceed925378ed] NameError (uninitialized constant PagesController::SocialTool):
+2019-05-23T06:26:51.795752+00:00 app[web.1]: F, [2019-05-23T06:26:51.795699 #4] FATAL -- : [dd69205e-a64d-44a4-9e71-ceed925378ed]
+2019-05-23T06:26:51.795814+00:00 app[web.1]: F, [2019-05-23T06:26:51.795760 #4] FATAL -- : [dd69205e-a64d-44a4-9e71-ceed925378ed] app/controllers/pages_controller.rb:15:in `tech_news'
