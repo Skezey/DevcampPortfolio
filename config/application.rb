@@ -25,6 +25,5 @@ module DevcampPortfolio
     config.load_defaults 5.2
     config.generators.system_tests = nil
     config.autoload_paths << "#{Rails.root}/lib"
-    config.eager_load_paths << "{Rails.root}/lib"
   end
 end
