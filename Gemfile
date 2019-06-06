@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -74,3 +75,5 @@ gem 'twitter', '~> 6.2'
 gem 'redis', '~> 4.1', '>= 4.1.1'
 gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
+gem 'rubocop', require: false
+gem 'rubocop-rails'
